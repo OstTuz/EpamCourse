@@ -33,9 +33,22 @@ public class OptionalTask_Chapter1_Task8 {
         string.delete(deleteFrom, deleteTo);
         return string;
     }
+
+    public static String deleteTextBetweenAnother(StringBuilder string, String startSign, String endSign)throws Exception
+    {
+        int numberOfSecondBrecket = string.lastIndexOf(endSign);
+        string.reverse();
+        int numberOfFirstBracket = string.length() - string.lastIndexOf(startSign);
+        string.reverse();
+        String resultString = string.substring(0, numberOfFirstBracket) + string.substring(numberOfSecondBrecket, string.length());
+        return resultString;
+    }
+
     public static void main(String[] args)throws Exception {
-        StringBuilder string = new StringBuilder("Hello (Java)!!!");
+        StringBuilder string = new StringBuilder("H(e*llo J)a*va!!!");
         System.out.println(string);
+        System.out.println(deleteTextBetweenAnother(string, "*", "*"));
         System.out.println(deleteTextBetween(string, '(', ')'));
+
     }
 }
