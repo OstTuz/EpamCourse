@@ -1,3 +1,4 @@
+//Ввести строки из файла, записать в список. Вывести строки в файл в обратном порядке.
 package Collections;
 
 import java.io.FileReader;
@@ -10,7 +11,7 @@ public class OptionalTask1 {
         FileReader fileReader = new FileReader("src/stringFile.txt");
         Scanner scanner = new Scanner(fileReader);
         String textFromFile = "";
-        //List<String> words = new ArrayList<>();
+
         while (scanner.hasNext())
         {
                 textFromFile = textFromFile + scanner.nextLine();
