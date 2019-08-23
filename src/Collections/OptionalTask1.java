@@ -8,7 +8,7 @@ import java.util.*;
 public class OptionalTask1 {
 
     public static void main(String[] args)throws Exception {
-        FileReader fileReader = new FileReader("src/stringFile.txt");
+        FileReader fileReader = new FileReader("data/stringFile.txt");
         Scanner scanner = new Scanner(fileReader);
         String textFromFile = "";
 
@@ -27,7 +27,7 @@ public class OptionalTask1 {
             textFromFile += world + " ";
         }
 
-        FileWriter fileWriter = new FileWriter("src/stringFile.txt");
+        FileWriter fileWriter = new FileWriter("data/stringFile.txt");
         fileWriter.write(textFromFile);
         fileWriter.close();
 

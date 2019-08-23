@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class OptionalTask8 {
     public static void main(String[] args) throws IOException {
-        FileReader fileReader = new FileReader("src/textForOptionalTask8.txt");
+        FileReader fileReader = new FileReader("data/textForOptionalTask8.txt");
         Scanner scanner = new Scanner(fileReader);
         String stringFromFile = "";
         while (scanner.hasNext())
