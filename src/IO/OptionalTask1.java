@@ -22,15 +22,12 @@ public class OptionalTask1 {
                 }
                 fileOutputStream.write(randomNumbersForFile);
                 fileOutputStream.close();
-                System.out.println(Arrays.toString(randomNumbersForFile));
 
                 fileInputStream = new FileInputStream(fileNumbers);
                 byte[]bytes = new byte[AMOUNT_OF_NUMBERS];
                 fileInputStream.read(bytes);
                 fileInputStream.close();
-                System.out.println(Arrays.toString(bytes));
                 Arrays.sort(bytes);
-                System.out.println(Arrays.toString(bytes));
 
                 fileOutputStream = new FileOutputStream(fileNumbers);
                 fileOutputStream.write(bytes);
